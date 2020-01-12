@@ -1,0 +1,93 @@
+/* ---------- start reset css ---------- */
+
+html body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+/* ---------- end reset css ---------- */
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.title-container>p {
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.part-list {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.part-item {
+    padding: 1rem 1.5rem;
+    margin: 0.5rem;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.part-item.active {
+    background: turquoise;
+}
+
+.part-item>p {
+    text-transform: uppercase;
+}
+
+.part-item>img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0.5rem;
+}
+
+.character-container {
+    padding: 0.5rem;
+    margin: 8px;
+    max-height: 400px;
+    min-width: 400px;
+    background-image: url("../assets/castle.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+}
+
+.character {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+}
