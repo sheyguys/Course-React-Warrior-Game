@@ -14,48 +14,7 @@
 
 <body>
     <div id="app"></div>
-    <script type="text/babel">
-        class Title extends React.Component {
-            render() {
-                return (
-                    <div className="title-container">
-                        <p>{this.props.text}</p>
-                    </div>
-                )
-            }
-        }
-        class PartList extends React.Component {
-            render() {
-                const item = [
-                    { id: "p-01", title: "Helmet" },
-                    { id: "p-02", title: "Armor" },
-                    { id: "p-03", title: "Weapon" },
-                ]
-                return (
-                    <div className="part-list">
-                        {item.map((item, key) => (
-                            <div className="part-item" key={item.id}>
-                                <p>{item.title}</p>
-                            </div>
-                        ))}
-                    </div>
-                )
-            }
-        }
-        class WarriorGame extends React.Component {
-            render() {
-                return (
-                    <div>
-                        <Title text="Warrior Game" />
-                        <PartList />
-                    </div>
-                )
-            }
-        }
-        ReactDOM.render(
-            <WarriorGame />,
-            document.getElementById("app")
-        );
+    <script type="text/babel" src="./app.js">
     </script>
 </body>
 

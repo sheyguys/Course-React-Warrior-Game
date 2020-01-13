@@ -58,7 +58,7 @@ p {
 }
 
 .part-item.active {
-    background: turquoise;
+    background: greenyellow;
 }
 
 .part-item>p {
